@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <!-- don't forget id -->
+      <!-- this section work like a button to show the video wrapper section -->
+      <div
+        class="v-plchldr"
+        id="v-plchldr"
+      >
+
+        <div class="v-plchldr-placeholder">
+          <div class="v-plchldr__icon icon">
+            <?xml version="1.0" encoding="UTF-8"?><svg
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              fill="#9c8a80"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke-width="1.5"
+            >
+              <path
+                d="M6.90588 4.53682C6.50592 4.2998 6 4.58808 6 5.05299V18.947C6 19.4119 6.50592 19.7002 6.90588 19.4632L18.629 12.5162C19.0211 12.2838 19.0211 11.7162 18.629 11.4838L6.90588 4.53682Z"
+                stroke="#9c8a80"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+          <h2 class="v-plchldr__title">Grey Wolfe</h2>
+        </div>
+      </div>
+    </main>
+
+    <!-- video section -->
+
+    <!-- don't forget if of `videoWrapper` and `videoCloseButton` -->
+    <!-- this section is `display: none` by default -->
+    <div class="videoWrapper" id="videoWrapper" style="display: none">
+      <div class="v-plchldr__icon-close icon" id="videoCloseButton">
+        <?xml version="1.0" encoding="UTF-8"?><svg
+          width="24px"
+          height="24px"
+          viewBox="0 0 24 24"
+          fill="#9c8a80"
+          xmlns="http://www.w3.org/2000/svg"
+          stroke-width="1.5"
+        >
+          <path
+            d="M6.75827 17.2426L12.0009 12M17.2435 6.75736L12.0009 12M12.0009 12L6.75827 6.75736M12.0009 12L17.2435 17.2426"
+            stroke="#9c8a80"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+      </div>
+      <!-- don't forget videoFrame id as well -->
+      <!-- got and id for the video frame to control start and stop video -->
+      <iframe
+        id="videoFrame"
+        class="video"
+        width="200px"
+        height="200px"
+        src="https://www.youtube.com/embed/7XmjlgATzPE"
+        title="Grey Wolfe New Members Welcome film"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- video section -->
+    <script src="./script.js" defer></script>
+  </body>
+</html>
